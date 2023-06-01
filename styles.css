@@ -43,27 +43,31 @@ body {
     height: 270px;
     border-radius: 15px;
     margin-bottom: 20px;
+    margin-top: -295px;
     background-color: var(--trans-cyan);
     position: absolute;
-    top: 23.7%;
-    display: none;
+    visibility: hidden;
 }
 
-#hover-overlay:hover {
-    display: block;
-    cursor: pointer;
+#cube-image:hover + #hover-overlay {
+    visibility: visible;
 }
+
 
 #eye {
     position: absolute;
     margin-top: 110px;
     left: 42%;
-    /* display: none; */
 }
 
 #header {
     color: var(--white);
     margin-bottom: 20px;
+}
+
+#header:hover {
+    color: var(--cyan);
+    cursor: pointer;
 }
 
 #subscript {
@@ -123,7 +127,12 @@ body {
     margin-right: 8px;
 }
 
-a {
+#name {
     color: var(--white);
     text-decoration: none;
+}
+
+#name:hover {
+    color: var(--cyan);
+    cursor: pointer;
 }
